@@ -1,0 +1,58 @@
+<script>
+    
+   const ar = `Delhi Mubai Pune`. spit(` `);
+    const r = [
+      ['Delhi','Mumbai'],
+      ['Delhi','Pune'],
+      ];
+ const adjecencylist = new map();
+ function addnode(ar)
+{
+  adjecencylist.set(ar,[]);
+
+
+}
+function addedge(origin,destination)
+  {
+    adjecencylist.get(origin).push(destination);
+  adjecencylist.get(destination).push(origin);
+
+  }
+ar.forEach(addnode);
+  r.forEach(r => addedge(...route))
+
+function bst(start, val)
+{
+   const visited = new set();
+   const queue = [start];
+  while(queue.lenght>0)
+{
+   const ar = queue.shift();
+  const destination =  adjecencylist.get(ar);
+  
+for(const destination of destinations)
+{
+    if(destination === val){
+      console.log('BFS found airport');
+  return;
+}
+if(!visited.has(destination))
+{
+  visited.add(destination);
+  queue.push(destination);
+
+}
+
+}
+
+
+}
+
+console.log('sorry...... not found');
+
+}
+var var = prompt("enter name of airport");
+ bfs('Delhi',val)
+
+
+</script>

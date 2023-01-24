@@ -1,0 +1,44 @@
+ 
+<html>
+<script>
+function printQueue(queue)
+{
+while(queue.length!=0)
+{
+document.write(queue[0]+"");
+queue.shift();
+}
+}
+function reverseQueue(q)
+{
+if(q.length==0)
+return;
+let data =q[0];
+q.shift();
+
+
+reverseQueue(q);
+q.push(data);
+}
+
+let queue=[];
+queue.push(56);
+queue.push(27);
+
+queue.push(30);
+
+queue.push(85);
+queue.push(92);
+
+queue.push(58);
+reverseQueue(queue);
+printQueue(queue);
+</script>
+</html>
+
+
+
+
+
+
+

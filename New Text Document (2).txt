@@ -1,0 +1,7 @@
+<script>
+  class linearsearch{
+     linearsearch()
+
+}
+
+</script>

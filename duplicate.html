@@ -1,0 +1,38 @@
+<script>
+class Node
+{
+constructor (data){
+this.left=null;
+this.rigth=null;
+this.data=data;
+}
+}
+function checkDutil(root,s)
+{
+if(root==null)
+return false;
+if (s.has(root.data))
+return true;
+
+s.add(root.data);
+
+return checkDutil(root.rigth,s);
+}
+
+function checkDup(root)
+{
+let s=new set();
+return checkDutil(root,s);
+}
+
+let root=new Node(1);
+root.left=new Node(2);
+root.rigth=new Node(11);
+root.left.left=new Node(3);
+if(checkDup(root))
+document.write("yes,tree is having duplicate data");
+else
+document.write("no,tree is  not having duplicate data");
+
+</script>
+</html>
